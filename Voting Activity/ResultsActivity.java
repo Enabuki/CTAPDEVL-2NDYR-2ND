@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -34,7 +36,14 @@ public class ResultsActivity extends AppCompatActivity {
 
     // Method to handle the EXIT button click
     public void exit(View view) {
-        // Finish the ResultsActivity and return to MainActivity
+        // Display "Thank you for voting!" message
+        Toast.makeText(this, "Thank you for voting!", Toast.LENGTH_SHORT).show();
+
+        // Return to MainActivity
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+        // Finish the ResultsActivity
         finish();
     }
 }
