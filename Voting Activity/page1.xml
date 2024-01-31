@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-
     android:orientation="vertical"
     tools:context=".VotingActivity">
 
@@ -23,8 +22,16 @@
         android:layout_width="412dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="10dp"
         app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/President"
@@ -34,17 +41,17 @@
         android:layout_marginTop="1dp"
         android:background="#47CCA5"
         android:hint="Enter President"
-        android:inputType="number" />
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/VicePresident"
         android:layout_width="275dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="5dp"
         android:background="#47CCA5"
         android:hint="Enter Vice President"
-        android:inputType="number" />
+        android:inputType="text" />
 
 
     <Button
@@ -52,10 +59,9 @@
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:onClick="submit"
         android:text="SUBMIT"
-
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="428dp" />
 
