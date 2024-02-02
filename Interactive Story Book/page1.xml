@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/page1"
+    tools:context=".page1">
+
+
+    <TextView
+        android:id="@+id/Character"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#EF9E33"
+        android:onClick="gotoPage1"
+        android:text="BACK"
+        android:textColor="#397F60"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#EF9E33"
+        android:onClick="gotopage3"
+        android:text="NEXT"
+        android:textColor="#397F60"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
